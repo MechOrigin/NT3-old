@@ -1,0 +1,8 @@
+#47F minecraft:birch_forest
+#140 terraforged:cave
+#3F6 terraforged:oak_forest
+#1DF minecraft:old_growth_birch_forest
+#5A5 biomesoplenty:orchard
+#698 biomesoplenty:redwood_forest
+#5FF minecraft:river
+#774 minecraft:sunflower_plains

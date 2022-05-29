@@ -1,0 +1,24 @@
+iron:
+limonite
+pyrite
+magnetite
+banded iron
+
+copper:
+chalcopyrite
+malachite
+tetrahedrite
+
+nickel:
+pentlandite
+garnierite
+
+lead:
+galena
+
+tin:
+casserite
+
+zinc:
+sphalerite
+

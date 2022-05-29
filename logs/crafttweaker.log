@@ -1,0 +1,10 @@
+[06:49:44.398][INFO]: Starting building internal Registries
+[06:49:45.460][INFO]: The following mods have explicit CraftTweaker support:
+[06:49:45.464][INFO]: 'aquaculture' at version '1.18.1-2.3.3'
+[06:49:45.464][INFO]: 'crafttweaker' at version '9.0.69'
+[06:49:46.285][INFO]: BEP 'itemgroup' has a validator but no BEP method
+[06:49:46.436][INFO]: Completed building internal Registries
+[06:50:13.219][INFO]: Started loading Scripts for Loader 'initialize'!
+[06:50:14.598][INFO]: Finished loading Scripts!
+[07:13:04.214][INFO]: Started loading Scripts for Loader 'crafttweaker'!
+[07:13:04.374][INFO]: Finished loading Scripts!

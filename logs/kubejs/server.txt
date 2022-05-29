@@ -1,0 +1,47 @@
+[07:12:37] [INFO ] Loaded script server_scripts:function.js in 0.014 s
+[07:12:37] [INFO ] Current packmode is: normal
+[07:12:37] [INFO ] Loaded script server_scripts:packmode.js in 0.027 s
+[07:12:37] [INFO ] Loaded script server_scripts:general.js in 0.004 s
+[07:12:37] [INFO ] Loaded script server_scripts:tags.js in 0.011 s
+[07:12:37] [INFO ] Loaded script server_scripts:unify_outputs.js in 0.002 s
+[07:12:37] [INFO ] Loaded script server_scripts:lychee.js in 0.004 s
+[07:12:37] [INFO ] Hello, World! (You will see this line every time server resources reload)
+[07:12:37] [INFO ] Loaded script server_scripts:script.js in 0.023 s
+[07:12:37] [INFO ] Loaded script server_scripts:settings.js in 0.001 s
+[07:12:37] [INFO ] Loaded 8/8 KubeJS server scripts in 0.098 s
+[07:12:37] [INFO ] Scripts loaded
+[07:12:37] [INFO ] Scanning recipes...
+[07:12:38] [INFO ] [mob_effects] Found 0 tags, added 0 objects, removed 0 objects
+[07:12:39] [INFO ] [potions] Found 0 tags, added 0 objects, removed 0 objects
+[07:12:39] [INFO ] [enchantments] Found 0 tags, added 0 objects, removed 0 objects
+[07:12:39] [INFO ] [structure_features] Found 0 tags, added 0 objects, removed 0 objects
+[07:12:39] [INFO ] [entity_types] Found 53 tags, added 0 objects, removed 0 objects
+[07:12:39] [INFO ] [block_entity_types] Found 2 tags, added 0 objects, removed 0 objects
+[07:12:39] [INFO ] [game_events] Found 2 tags, added 0 objects, removed 0 objects
+[07:12:39] [INFO ] [fluids] Found 600 tags, added 0 objects, removed 0 objects
+[07:12:40] [INFO ] [functions] Found 0 tags, added 0 objects, removed 0 objects
+[07:12:46] [INFO ] [blocks] Found 5615 tags, added 20 objects, removed 0 objects
+[07:12:50] [INFO ] [items] Found 8766 tags, added 2 objects, removed 0 objects
+[07:12:50] [WARN ] Failed to parse recipe 'beyond_earth:smeltery/melting/metal/ostrum/raw[tconstruct:ore_melting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[07:12:50] [WARN ] Failed to parse recipe beyond_earth:smeltery/melting/metal/ostrum/raw[tconstruct:ore_melting]: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[07:12:50] [WARN ] Failed to parse recipe 'beyond_earth:smeltery/melting/metal/desh/ore[tconstruct:ore_melting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[07:12:50] [WARN ] Failed to parse recipe beyond_earth:smeltery/melting/metal/desh/ore[tconstruct:ore_melting]: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[07:12:50] [WARN ] Failed to parse recipe 'beyond_earth:smeltery/melting/metal/desh/raw[tconstruct:ore_melting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[07:12:50] [WARN ] Failed to parse recipe beyond_earth:smeltery/melting/metal/desh/raw[tconstruct:ore_melting]: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[07:12:51] [WARN ] Failed to parse recipe 'beyond_earth:smeltery/melting/metal/calorite/ore[tconstruct:ore_melting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[07:12:51] [WARN ] Failed to parse recipe beyond_earth:smeltery/melting/metal/calorite/ore[tconstruct:ore_melting]: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[07:12:51] [WARN ] Failed to parse recipe 'beyond_earth:smeltery/melting/metal/calorite/raw[tconstruct:ore_melting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[07:12:51] [WARN ] Failed to parse recipe beyond_earth:smeltery/melting/metal/calorite/raw[tconstruct:ore_melting]: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[07:12:51] [WARN ] Failed to parse recipe 'beyond_earth:smeltery/melting/metal/desh/raw_block[tconstruct:ore_melting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[07:12:51] [WARN ] Failed to parse recipe beyond_earth:smeltery/melting/metal/desh/raw_block[tconstruct:ore_melting]: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[07:12:51] [WARN ] Failed to parse recipe 'beyond_earth:smeltery/melting/metal/calorite/raw_block[tconstruct:ore_melting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[07:12:51] [WARN ] Failed to parse recipe beyond_earth:smeltery/melting/metal/calorite/raw_block[tconstruct:ore_melting]: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[07:12:51] [WARN ] Failed to parse recipe 'beyond_earth:smeltery/melting/metal/ostrum/raw_block[tconstruct:ore_melting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[07:12:51] [WARN ] Failed to parse recipe beyond_earth:smeltery/melting/metal/ostrum/raw_block[tconstruct:ore_melting]: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[07:12:51] [WARN ] Failed to parse recipe 'beyond_earth:smeltery/melting/metal/ostrum/ore[tconstruct:ore_melting]'! Falling back to vanilla: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[07:12:51] [WARN ] Failed to parse recipe beyond_earth:smeltery/melting/metal/ostrum/ore[tconstruct:ore_melting]: com.google.gson.JsonSyntaxException: Missing rate, expected to find a string
+[07:12:51] [INFO ] Found 11262 recipes and 0 failed recipes in 1.262 s
+[07:12:52] [INFO ] Posted recipe events in 1.175 s
+[07:12:53] [INFO ] Modified & removed recipes in 656.1 ms
+[07:12:53] [INFO ] Added recipes in 25.35 ms
+[07:12:53] [INFO ] Added 343 recipes, removed 12 recipes, modified 388 recipes, with 0 failed recipes and 0 fall-backed recipes

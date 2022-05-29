@@ -1,0 +1,402 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 2/23/22, 8:40 AM
+Description: Starting integrated server
+
+java.lang.ClassCastException: class snownee.lychee.item_inside.ItemInsideRecipe cannot be cast to class java.lang.Comparable (snownee.lychee.item_inside.ItemInsideRecipe is in module lychee@1.5.0 of loader 'TRANSFORMER' @1595d2b2; java.lang.Comparable is in module java.base of loader 'bootstrap')
+	at java.util.ComparableTimSort.countRunAndMakeAscending(ComparableTimSort.java:320) ~[?:?] {}
+	at java.util.ComparableTimSort.sort(ComparableTimSort.java:202) ~[?:?] {}
+	at java.util.Arrays.sort(Arrays.java:1107) ~[?:?] {}
+	at java.util.Arrays.sort(Arrays.java:1301) ~[?:?] {}
+	at java.util.ArrayList.sort(ArrayList.java:1721) ~[?:?] {re:computing_frames,re:mixin}
+	at snownee.lychee.core.recipe.type.BlockKeyRecipeType.buildCache(BlockKeyRecipeType.java:67) ~[Lychee-1.18.1-forge-1.5.0.jar%23133!/:1.5.0] {re:mixin,re:classloading}
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:computing_frames,re:mixin}
+	at net.minecraft.tags.TagContainer.handler$zif000$lychee_bindToGlobal(TagContainer.java:518) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:lychee.mixins.json:TagContainerMixin,pl:mixin:A}
+	at net.minecraft.tags.TagContainer.m_13431_(TagContainer.java:78) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:lychee.mixins.json:TagContainerMixin,pl:mixin:A}
+	at net.minecraft.server.ServerResources.m_136179_(ServerResources.java:97) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,xf:fml:placebo:recipemanager,re:classloading,xf:fml:placebo:recipemanager,pl:mixin:A}
+	at net.minecraft.client.Minecraft.doLoadLevel(Minecraft.java:1931) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ae2.mixins.json:PickColorMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:blueprint.mixins.json:client.MinecraftMixin,pl:mixin:APP:immersiveengineering.mixins.json:accessors.client.MinecraftAccess,pl:mixin:APP:kubejs-common.mixins.json:MinecraftMixin,pl:mixin:APP:quartz.mixins.json:MinecraftShutdownMixin,pl:mixin:APP:terrablender_forge.mixins.json:client.MixinMinecraft,pl:mixin:APP:the_bumblezone.mixins.json:client.MinecraftMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91200_(Minecraft.java:1873) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ae2.mixins.json:PickColorMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:blueprint.mixins.json:client.MinecraftMixin,pl:mixin:APP:immersiveengineering.mixins.json:accessors.client.MinecraftAccess,pl:mixin:APP:kubejs-common.mixins.json:MinecraftMixin,pl:mixin:APP:quartz.mixins.json:MinecraftShutdownMixin,pl:mixin:APP:terrablender_forge.mixins.json:client.MixinMinecraft,pl:mixin:APP:the_bumblezone.mixins.json:client.MinecraftMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.m_101744_(WorldSelectionList.java:436) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:classloading}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.m_101704_(WorldSelectionList.java:342) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:classloading}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.m_6375_(WorldSelectionList.java:273) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:classloading}
+	at net.minecraft.client.gui.components.AbstractSelectionList.m_6375_(AbstractSelectionList.java:323) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,xf:fml:configured:set_background_texture_1,pl:runtimedistcleaner:A,re:classloading,xf:fml:configured:set_background_texture_1,pl:mixin:APP:kubejs-common.mixins.json:AbstractSelectionListMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.components.events.ContainerEventHandler.m_6375_(ContainerEventHandler.java:27) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:computing_frames,re:mixin,re:classloading}
+	at net.minecraft.client.MouseHandler.m_168084_(MouseHandler.java:88) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.Screen.m_96579_(Screen.java:527) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:mixin:APP:balm.mixins.json:ScreenAccessor,pl:mixin:APP:controlling.mixins.json:AccessScreen,pl:mixin:APP:iceberg.mixins.json:ScreenMixin,pl:mixin:APP:kubejs-common.mixins.json:ScreenMixin,pl:mixin:APP:legendarytooltips.mixins.json:ScreenMixin,pl:mixin:APP:patchouli_xplat.mixins.json:client.AccessorScreen,pl:mixin:APP:quark.mixins.json:client.ScreenMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.m_91530_(MouseHandler.java:85) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.m_168091_(MouseHandler.java:185) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:118) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,xf:OptiFine:default,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.client.MouseHandler.m_91565_(MouseHandler.java:184) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at org.lwjgl.glfw.GLFWMouseButtonCallback$Container.invoke(GLFWMouseButtonCallback.java:81) ~[lwjgl-glfw-3.2.2.jar%2348!/:build 10] {}
+	at bre2el.fpsreducer.handler.glfw.InputEventHandler$MouseButtonEventHandler.invoke(InputEventHandler.java:133) ~[FpsReducer-forge-1.25-mc1.18.jar%23106!/:1.25-mc1.18] {re:classloading}
+	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) ~[lwjgl-glfw-3.2.2.jar%2348!/:build 10] {}
+	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar%2344!/:build 10] {}
+	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3174) ~[lwjgl-glfw-3.2.2.jar%2348!/:build 10] {re:mixin}
+	at com.mojang.blaze3d.systems.RenderSystem.handler$zfe000$handleWaitEventsTimeout(RenderSystem.java:1354) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,xf:OptiFine:default,re:classloading,xf:OptiFine:default,pl:mixin:APP:fpsreducer.mixins.json:RenderSystemMixin,pl:mixin:A}
+	at com.mojang.blaze3d.systems.RenderSystem.m_69830_(RenderSystem.java) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,xf:OptiFine:default,re:classloading,xf:OptiFine:default,pl:mixin:APP:fpsreducer.mixins.json:RenderSystemMixin,pl:mixin:A}
+	at net.minecraft.client.Minecraft.m_91383_(Minecraft.java:1065) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ae2.mixins.json:PickColorMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:blueprint.mixins.json:client.MinecraftMixin,pl:mixin:APP:immersiveengineering.mixins.json:accessors.client.MinecraftAccess,pl:mixin:APP:kubejs-common.mixins.json:MinecraftMixin,pl:mixin:APP:quartz.mixins.json:MinecraftShutdownMixin,pl:mixin:APP:terrablender_forge.mixins.json:client.MixinMinecraft,pl:mixin:APP:the_bumblezone.mixins.json:client.MinecraftMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:660) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ae2.mixins.json:PickColorMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:blueprint.mixins.json:client.MinecraftMixin,pl:mixin:APP:immersiveengineering.mixins.json:accessors.client.MinecraftAccess,pl:mixin:APP:kubejs-common.mixins.json:MinecraftMixin,pl:mixin:APP:quartz.mixins.json:MinecraftShutdownMixin,pl:mixin:APP:terrablender_forge.mixins.json:client.MixinMinecraft,pl:mixin:APP:the_bumblezone.mixins.json:client.MinecraftMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:205) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$launchService$0(CommonClientLaunchHandler.java:45) ~[fmlloader-1.18.1-39.0.85.jar%2323!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:149) [bootstraplauncher-1.0.0.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at java.util.ComparableTimSort.countRunAndMakeAscending(ComparableTimSort.java:320) ~[?:?] {}
+	at java.util.ComparableTimSort.sort(ComparableTimSort.java:202) ~[?:?] {}
+	at java.util.Arrays.sort(Arrays.java:1107) ~[?:?] {}
+	at java.util.Arrays.sort(Arrays.java:1301) ~[?:?] {}
+	at java.util.ArrayList.sort(ArrayList.java:1721) ~[?:?] {re:computing_frames,re:mixin}
+	at snownee.lychee.core.recipe.type.BlockKeyRecipeType.buildCache(BlockKeyRecipeType.java:67) ~[Lychee-1.18.1-forge-1.5.0.jar%23133!/:1.5.0] {re:mixin,re:classloading}
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:computing_frames,re:mixin}
+	at net.minecraft.tags.TagContainer.handler$zif000$lychee_bindToGlobal(TagContainer.java:518) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:lychee.mixins.json:TagContainerMixin,pl:mixin:A}
+	at net.minecraft.tags.TagContainer.m_13431_(TagContainer.java:78) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:lychee.mixins.json:TagContainerMixin,pl:mixin:A}
+	at net.minecraft.server.ServerResources.m_136179_(ServerResources.java:97) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,xf:fml:placebo:recipemanager,re:classloading,xf:fml:placebo:recipemanager,pl:mixin:A}
+	at net.minecraft.client.Minecraft.doLoadLevel(Minecraft.java:1931) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ae2.mixins.json:PickColorMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:blueprint.mixins.json:client.MinecraftMixin,pl:mixin:APP:immersiveengineering.mixins.json:accessors.client.MinecraftAccess,pl:mixin:APP:kubejs-common.mixins.json:MinecraftMixin,pl:mixin:APP:quartz.mixins.json:MinecraftShutdownMixin,pl:mixin:APP:terrablender_forge.mixins.json:client.MixinMinecraft,pl:mixin:APP:the_bumblezone.mixins.json:client.MinecraftMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91200_(Minecraft.java:1873) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ae2.mixins.json:PickColorMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:blueprint.mixins.json:client.MinecraftMixin,pl:mixin:APP:immersiveengineering.mixins.json:accessors.client.MinecraftAccess,pl:mixin:APP:kubejs-common.mixins.json:MinecraftMixin,pl:mixin:APP:quartz.mixins.json:MinecraftShutdownMixin,pl:mixin:APP:terrablender_forge.mixins.json:client.MixinMinecraft,pl:mixin:APP:the_bumblezone.mixins.json:client.MinecraftMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.m_101744_(WorldSelectionList.java:436) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:classloading}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.m_101704_(WorldSelectionList.java:342) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:classloading}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.m_6375_(WorldSelectionList.java:273) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:classloading}
+	at net.minecraft.client.gui.components.AbstractSelectionList.m_6375_(AbstractSelectionList.java:323) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,xf:fml:configured:set_background_texture_1,pl:runtimedistcleaner:A,re:classloading,xf:fml:configured:set_background_texture_1,pl:mixin:APP:kubejs-common.mixins.json:AbstractSelectionListMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.components.events.ContainerEventHandler.m_6375_(ContainerEventHandler.java:27) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:computing_frames,re:mixin,re:classloading}
+	at net.minecraft.client.MouseHandler.m_168084_(MouseHandler.java:88) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.Screen.m_96579_(Screen.java:527) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:mixin:APP:balm.mixins.json:ScreenAccessor,pl:mixin:APP:controlling.mixins.json:AccessScreen,pl:mixin:APP:iceberg.mixins.json:ScreenMixin,pl:mixin:APP:kubejs-common.mixins.json:ScreenMixin,pl:mixin:APP:legendarytooltips.mixins.json:ScreenMixin,pl:mixin:APP:patchouli_xplat.mixins.json:client.AccessorScreen,pl:mixin:APP:quark.mixins.json:client.ScreenMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.m_91530_(MouseHandler.java:85) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.m_168091_(MouseHandler.java:185) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:118) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,xf:OptiFine:default,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.client.MouseHandler.m_91565_(MouseHandler.java:184) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at org.lwjgl.glfw.GLFWMouseButtonCallback$Container.invoke(GLFWMouseButtonCallback.java:81) ~[lwjgl-glfw-3.2.2.jar%2348!/:build 10] {}
+	at bre2el.fpsreducer.handler.glfw.InputEventHandler$MouseButtonEventHandler.invoke(InputEventHandler.java:133) ~[FpsReducer-forge-1.25-mc1.18.jar%23106!/:1.25-mc1.18] {re:classloading}
+	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) ~[lwjgl-glfw-3.2.2.jar%2348!/:build 10] {}
+	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar%2344!/:build 10] {}
+	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3174) ~[lwjgl-glfw-3.2.2.jar%2348!/:build 10] {re:mixin}
+	at com.mojang.blaze3d.systems.RenderSystem.handler$zfe000$handleWaitEventsTimeout(RenderSystem.java:1354) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,xf:OptiFine:default,re:classloading,xf:OptiFine:default,pl:mixin:APP:fpsreducer.mixins.json:RenderSystemMixin,pl:mixin:A}
+-- Starting integrated server --
+Details:
+	Level ID: oregen test
+	Level Name: oregen test
+Stacktrace:
+	at net.minecraft.client.Minecraft.doLoadLevel(Minecraft.java:1931) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ae2.mixins.json:PickColorMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:blueprint.mixins.json:client.MinecraftMixin,pl:mixin:APP:immersiveengineering.mixins.json:accessors.client.MinecraftAccess,pl:mixin:APP:kubejs-common.mixins.json:MinecraftMixin,pl:mixin:APP:quartz.mixins.json:MinecraftShutdownMixin,pl:mixin:APP:terrablender_forge.mixins.json:client.MixinMinecraft,pl:mixin:APP:the_bumblezone.mixins.json:client.MinecraftMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91200_(Minecraft.java:1873) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ae2.mixins.json:PickColorMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:blueprint.mixins.json:client.MinecraftMixin,pl:mixin:APP:immersiveengineering.mixins.json:accessors.client.MinecraftAccess,pl:mixin:APP:kubejs-common.mixins.json:MinecraftMixin,pl:mixin:APP:quartz.mixins.json:MinecraftShutdownMixin,pl:mixin:APP:terrablender_forge.mixins.json:client.MixinMinecraft,pl:mixin:APP:the_bumblezone.mixins.json:client.MinecraftMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.m_101744_(WorldSelectionList.java:436) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:classloading}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.m_101704_(WorldSelectionList.java:342) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:classloading}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.m_6375_(WorldSelectionList.java:273) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:classloading}
+	at net.minecraft.client.gui.components.AbstractSelectionList.m_6375_(AbstractSelectionList.java:323) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,xf:fml:configured:set_background_texture_1,pl:runtimedistcleaner:A,re:classloading,xf:fml:configured:set_background_texture_1,pl:mixin:APP:kubejs-common.mixins.json:AbstractSelectionListMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.components.events.ContainerEventHandler.m_6375_(ContainerEventHandler.java:27) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:computing_frames,re:mixin,re:classloading}
+	at net.minecraft.client.MouseHandler.m_168084_(MouseHandler.java:88) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.Screen.m_96579_(Screen.java:527) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:mixin:APP:balm.mixins.json:ScreenAccessor,pl:mixin:APP:controlling.mixins.json:AccessScreen,pl:mixin:APP:iceberg.mixins.json:ScreenMixin,pl:mixin:APP:kubejs-common.mixins.json:ScreenMixin,pl:mixin:APP:legendarytooltips.mixins.json:ScreenMixin,pl:mixin:APP:patchouli_xplat.mixins.json:client.AccessorScreen,pl:mixin:APP:quark.mixins.json:client.ScreenMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.m_91530_(MouseHandler.java:85) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.m_168091_(MouseHandler.java:185) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:118) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,xf:OptiFine:default,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.client.MouseHandler.m_91565_(MouseHandler.java:184) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at org.lwjgl.glfw.GLFWMouseButtonCallback$Container.invoke(GLFWMouseButtonCallback.java:81) ~[lwjgl-glfw-3.2.2.jar%2348!/:build 10] {}
+	at bre2el.fpsreducer.handler.glfw.InputEventHandler$MouseButtonEventHandler.invoke(InputEventHandler.java:133) ~[FpsReducer-forge-1.25-mc1.18.jar%23106!/:1.25-mc1.18] {re:classloading}
+	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) ~[lwjgl-glfw-3.2.2.jar%2348!/:build 10] {}
+	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar%2344!/:build 10] {}
+	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3174) ~[lwjgl-glfw-3.2.2.jar%2348!/:build 10] {re:mixin}
+	at com.mojang.blaze3d.systems.RenderSystem.handler$zfe000$handleWaitEventsTimeout(RenderSystem.java:1354) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,xf:OptiFine:default,re:classloading,xf:OptiFine:default,pl:mixin:APP:fpsreducer.mixins.json:RenderSystemMixin,pl:mixin:A}
+	at com.mojang.blaze3d.systems.RenderSystem.m_69830_(RenderSystem.java) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,xf:OptiFine:default,re:classloading,xf:OptiFine:default,pl:mixin:APP:fpsreducer.mixins.json:RenderSystemMixin,pl:mixin:A}
+	at net.minecraft.client.Minecraft.m_91383_(Minecraft.java:1065) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ae2.mixins.json:PickColorMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:blueprint.mixins.json:client.MinecraftMixin,pl:mixin:APP:immersiveengineering.mixins.json:accessors.client.MinecraftAccess,pl:mixin:APP:kubejs-common.mixins.json:MinecraftMixin,pl:mixin:APP:quartz.mixins.json:MinecraftShutdownMixin,pl:mixin:APP:terrablender_forge.mixins.json:client.MixinMinecraft,pl:mixin:APP:the_bumblezone.mixins.json:client.MinecraftMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:660) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ae2.mixins.json:PickColorMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:blueprint.mixins.json:client.MinecraftMixin,pl:mixin:APP:immersiveengineering.mixins.json:accessors.client.MinecraftAccess,pl:mixin:APP:kubejs-common.mixins.json:MinecraftMixin,pl:mixin:APP:quartz.mixins.json:MinecraftShutdownMixin,pl:mixin:APP:terrablender_forge.mixins.json:client.MixinMinecraft,pl:mixin:APP:the_bumblezone.mixins.json:client.MinecraftMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:205) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$launchService$0(CommonClientLaunchHandler.java:45) ~[fmlloader-1.18.1-39.0.85.jar%2323!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:149) [bootstraplauncher-1.0.0.jar:?] {}
+
+
+-- Affected screen --
+Details:
+	Screen name: net.minecraft.client.gui.screens.worldselection.SelectWorldScreen
+Stacktrace:
+	at net.minecraft.client.gui.screens.Screen.m_96579_(Screen.java:527) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:mixin:APP:balm.mixins.json:ScreenAccessor,pl:mixin:APP:controlling.mixins.json:AccessScreen,pl:mixin:APP:iceberg.mixins.json:ScreenMixin,pl:mixin:APP:kubejs-common.mixins.json:ScreenMixin,pl:mixin:APP:legendarytooltips.mixins.json:ScreenMixin,pl:mixin:APP:patchouli_xplat.mixins.json:client.AccessorScreen,pl:mixin:APP:quark.mixins.json:client.ScreenMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.m_91530_(MouseHandler.java:85) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.m_168091_(MouseHandler.java:185) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:118) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,xf:OptiFine:default,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.client.MouseHandler.m_91565_(MouseHandler.java:184) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:balm.mixins.json:MouseHandlerAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at org.lwjgl.glfw.GLFWMouseButtonCallback$Container.invoke(GLFWMouseButtonCallback.java:81) ~[lwjgl-glfw-3.2.2.jar%2348!/:build 10] {}
+	at bre2el.fpsreducer.handler.glfw.InputEventHandler$MouseButtonEventHandler.invoke(InputEventHandler.java:133) ~[FpsReducer-forge-1.25-mc1.18.jar%23106!/:1.25-mc1.18] {re:classloading}
+	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) ~[lwjgl-glfw-3.2.2.jar%2348!/:build 10] {}
+	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar%2344!/:build 10] {}
+	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3174) ~[lwjgl-glfw-3.2.2.jar%2348!/:build 10] {re:mixin}
+	at com.mojang.blaze3d.systems.RenderSystem.handler$zfe000$handleWaitEventsTimeout(RenderSystem.java:1354) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,xf:OptiFine:default,re:classloading,xf:OptiFine:default,pl:mixin:APP:fpsreducer.mixins.json:RenderSystemMixin,pl:mixin:A}
+	at com.mojang.blaze3d.systems.RenderSystem.m_69830_(RenderSystem.java) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,xf:OptiFine:default,re:classloading,xf:OptiFine:default,pl:mixin:APP:fpsreducer.mixins.json:RenderSystemMixin,pl:mixin:A}
+	at net.minecraft.client.Minecraft.m_91383_(Minecraft.java:1065) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ae2.mixins.json:PickColorMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:blueprint.mixins.json:client.MinecraftMixin,pl:mixin:APP:immersiveengineering.mixins.json:accessors.client.MinecraftAccess,pl:mixin:APP:kubejs-common.mixins.json:MinecraftMixin,pl:mixin:APP:quartz.mixins.json:MinecraftShutdownMixin,pl:mixin:APP:terrablender_forge.mixins.json:client.MixinMinecraft,pl:mixin:APP:the_bumblezone.mixins.json:client.MinecraftMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:660) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ae2.mixins.json:PickColorMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:blueprint.mixins.json:client.MinecraftMixin,pl:mixin:APP:immersiveengineering.mixins.json:accessors.client.MinecraftAccess,pl:mixin:APP:kubejs-common.mixins.json:MinecraftMixin,pl:mixin:APP:quartz.mixins.json:MinecraftShutdownMixin,pl:mixin:APP:terrablender_forge.mixins.json:client.MixinMinecraft,pl:mixin:APP:the_bumblezone.mixins.json:client.MinecraftMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:205) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$launchService$0(CommonClientLaunchHandler.java:45) ~[fmlloader-1.18.1-39.0.85.jar%2323!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:149) [bootstraplauncher-1.0.0.jar:?] {}
+
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: Default, Mod Resources, quark-emote-pack, KubeJS Resource Pack [assets]
+Stacktrace:
+	at net.minecraft.client.ResourceLoadStateTracker.m_168562_(ResourceLoadStateTracker.java:49) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,re:classloading,pl:mixin:APP:quartz.mixins.json:ResourceReloadListener,pl:mixin:A}
+	at net.minecraft.client.Minecraft.m_91354_(Minecraft.java:2255) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ae2.mixins.json:PickColorMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:blueprint.mixins.json:client.MinecraftMixin,pl:mixin:APP:immersiveengineering.mixins.json:accessors.client.MinecraftAccess,pl:mixin:APP:kubejs-common.mixins.json:MinecraftMixin,pl:mixin:APP:quartz.mixins.json:MinecraftShutdownMixin,pl:mixin:APP:terrablender_forge.mixins.json:client.MixinMinecraft,pl:mixin:APP:the_bumblezone.mixins.json:client.MinecraftMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:677) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ae2.mixins.json:PickColorMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:blueprint.mixins.json:client.MinecraftMixin,pl:mixin:APP:immersiveengineering.mixins.json:accessors.client.MinecraftAccess,pl:mixin:APP:kubejs-common.mixins.json:MinecraftMixin,pl:mixin:APP:quartz.mixins.json:MinecraftShutdownMixin,pl:mixin:APP:terrablender_forge.mixins.json:client.MixinMinecraft,pl:mixin:APP:the_bumblezone.mixins.json:client.MinecraftMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:205) ~[client-1.18.1-20211210.034407-srg.jar%23175!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$launchService$0(CommonClientLaunchHandler.java:45) ~[fmlloader-1.18.1-39.0.85.jar%2323!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-9.1.0.jar%235!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:149) [bootstraplauncher-1.0.0.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.18.1
+	Minecraft Version ID: 1.18.1
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.1, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+	Memory: 5040773712 bytes (4807 MiB) / 7000293376 bytes (6676 MiB) up to 7415529472 bytes (7072 MiB)
+	CPUs: 8
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD FX(tm)-8350 Eight-Core Processor           
+	Identifier: AuthenticAMD Family 21 Model 2 Stepping 0
+	Microarchitecture: Piledriver
+	Frequency (GHz): 4.34
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: AMD Radeon R9 200 Series
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x67b0
+	Graphics card #0 versionInfo: DriverVersion=27.20.14501.18003
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 1.07
+	Memory slot #0 type: DDR3
+	Memory slot #1 capacity (MB): 2048.00
+	Memory slot #1 clockSpeed (GHz): 1.07
+	Memory slot #1 type: DDR3
+	Memory slot #2 capacity (MB): 8192.00
+	Memory slot #2 clockSpeed (GHz): 1.07
+	Memory slot #2 type: DDR3
+	Memory slot #3 capacity (MB): 2048.00
+	Memory slot #3 clockSpeed (GHz): 1.07
+	Memory slot #3 type: DDR3
+	Virtual memory max (MB): 29290.80
+	Virtual memory used (MB): 22704.43
+	Swap memory total (MB): 19154.07
+	Swap memory used (MB): 3233.36
+	JVM Flags: 4 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -Xmx7072m -Xms256m
+	Launched Version: forge-39.0.85
+	Backend library: LWJGL version 3.2.2 SNAPSHOT
+	Backend API: AMD Radeon R9 200 Series GL version 4.6.14757 Core Profile Forward-Compatible Context 20.11.2 27.20.14501.18003, ATI Technologies Inc.
+	Window size: 1024x768
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	Graphics mode: fancy
+	Resource Packs: 
+	Current Language: English (US)
+	CPU: 8x AMD FX(tm)-8350 Eight-Core Processor 
+	OptiFine Version: OptiFine_1.18.1_HD_U_H4
+	OptiFine Build: 20211212-175054
+	Render Distance Chunks: 12
+	Mipmaps: 0
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.14757 Core Profile Forward-Compatible Context 20.11.2 27.20.14501.18003
+	OpenGlRenderer: AMD Radeon R9 200 Series
+	OpenGlVendor: ATI Technologies Inc.
+	CpuCount: 8
+	ModLauncher: 9.1.0+9.1.0+main.6690ee51
+	ModLauncher launch target: forgeclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		 mixin PLUGINSERVICE 
+		 eventbus PLUGINSERVICE 
+		 object_holder_definalize PLUGINSERVICE 
+		 runtime_enum_extender PLUGINSERVICE 
+		 capability_token_subclass PLUGINSERVICE 
+		 accesstransformer PLUGINSERVICE 
+		 runtimedistcleaner PLUGINSERVICE 
+		 mixin TRANSFORMATIONSERVICE 
+		 OptiFine TRANSFORMATIONSERVICE 
+		 fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		kotlinforforge@3.1.0
+		javafml@null
+	Mod List: 
+		CyclopsCore-1.18.1-1.13.0.jar                     |Cyclops Core                  |cyclopscore                   |1.13.0              |DONE      |Manifest: NOSIGNATURE
+		ftb-essentials-1801.1.6-build.37.jar              |FTB Essentials                |ftbessentials                 |1801.1.6-build.37   |DONE      |Manifest: NOSIGNATURE
+		supermartijn642configlib-1.0.9-mc1.18.jar         |SuperMartijn642's Config Lib  |supermartijn642configlib      |1.0.9               |DONE      |Manifest: NOSIGNATURE
+		no_null_processors_forge-2.0.2+1.18.1.jar         |No Null Processors            |no_null_processors            |2.0.2+1.18.1        |DONE      |Manifest: NOSIGNATURE
+		netherportalfix-forge-1.18-9.0.0.jar              |NetherPortalFix               |netherportalfix               |9.0.0               |DONE      |Manifest: NOSIGNATURE
+		CraftingAutomat-MC1.18.1-1.2.3.jar                |Crafting Automat              |craftingautomat               |1.2.3               |DONE      |Manifest: NOSIGNATURE
+		IntegratedTerminals-1.18.1-1.2.14.jar             |IntegratedTerminals           |integratedterminals           |1.2.14              |DONE      |Manifest: NOSIGNATURE
+		MultiMine-1.18.1.jar                              |Multi Mine                    |multimine                     |1.18.1              |DONE      |Manifest: NOSIGNATURE
+		Neat 1.8-30.jar                                   |Neat                          |neat                          |1.8-30              |DONE      |Manifest: NOSIGNATURE
+		ForgeEndertech-1.18.1-8.0.1.0-build.0059.jar      |ForgeEndertech                |forgeendertech                |08.0.1.0            |DONE      |Manifest: NOSIGNATURE
+		TerraForged-1.18.1-0.3.0-alpha-2.jar              |TerraForged                   |terraforged                   |0.3.0               |DONE      |Manifest: NOSIGNATURE
+		cookingforblockheads-forge-1.18.1-11.1.0.jar      |CookingForBlockheads          |cookingforblockheads          |11.1.0              |DONE      |Manifest: NOSIGNATURE
+		Controlling-forge-1.18.1-9.0+15.jar               |Controlling                   |controlling                   |9.0+15              |DONE      |Manifest: NOSIGNATURE
+		Placebo-1.18.1-6.1.1.jar                          |Placebo                       |placebo                       |6.1.1               |DONE      |Manifest: NOSIGNATURE
+		citadel-1.10.10-1.18.jar                          |Citadel                       |citadel                       |1.10.10             |DONE      |Manifest: NOSIGNATURE
+		alexsmobs-1.17.1.jar                              |Alex's Mobs                   |alexsmobs                     |1.17.1              |DONE      |Manifest: NOSIGNATURE
+		feature_nbt_deadlock_be_gone_forge-1.0.0+1.18.1.ja|Feature NBT Deadlock Be Gone  |feature_nbt_deadlock_be_gone  |1.0.0+1.18.1        |DONE      |Manifest: NOSIGNATURE
+		sophisticatedbackpacks-1.18.1-3.15.1.505.jar      |Sophisticated Backpacks       |sophisticatedbackpacks        |1.18.1-3.15.1.505   |DONE      |Manifest: NOSIGNATURE
+		guardvillagers-1.18.1.4.0.jar                     |Guard Villagers               |guardvillagers                |1.4.0               |DONE      |Manifest: NOSIGNATURE
+		balm-2.4.3+0.jar                                  |Balm                          |balm                          |2.4.3+0             |DONE      |Manifest: NOSIGNATURE
+		FpsReducer-forge-1.25-mc1.18.jar                  |FPS Reducer                   |fpsreducer                    |1.25-mc1.18         |DONE      |Manifest: NOSIGNATURE
+		Beyond-Earth-1.18.1-6.0d.jar                      |Beyond Earth                  |beyond_earth                  |6.0c                |DONE      |Manifest: NOSIGNATURE
+		Paraglider-1.18-1.5.0.0.jar                       |Paraglider                    |paraglider                    |1.5.0.0             |DONE      |Manifest: NOSIGNATURE
+		cloth-config-6.2.57-forge.jar                     |Cloth Config v4 API           |cloth_config                  |6.2.57              |DONE      |Manifest: NOSIGNATURE
+		integrated_proxy-1.18.1-1.1.jar                   |IntegratedProxy               |integrated_proxy              |1.1                 |DONE      |Manifest: NOSIGNATURE
+		structure_gel-1.18.1-2.1.3.jar                    |Structure Gel API             |structure_gel                 |2.1.3               |DONE      |Manifest: NOSIGNATURE
+		AdvancementPlaques-1.18.1-1.4.2.jar               |Advancement Plaques           |advancementplaques            |1.4.2               |DONE      |Manifest: NOSIGNATURE
+		repurposed_structures_forge-4.2.11+1.18.1.jar     |Repurposed Structures         |repurposed_structures         |4.2.11+1.18.1       |DONE      |Manifest: NOSIGNATURE
+		HostileNeuralNetworks-1.18.1-3.0.8.jar            |Hostile Neural Networks       |hostilenetworks               |3.0.8               |DONE      |Manifest: NOSIGNATURE
+		entangled-1.3.10-mc1.18.jar                       |Entangled                     |entangled                     |1.3.10              |DONE      |Manifest: NOSIGNATURE
+		CommonCapabilities-1.18.1-2.8.2.jar               |CommonCapabilities            |commoncapabilities            |2.8.2               |DONE      |Manifest: NOSIGNATURE
+		BiomesOPlenty-1.18.1-15.0.0.104-universal.jar     |Biomes O' Plenty              |biomesoplenty                 |1.18.1-15.0.0.104   |DONE      |Manifest: NOSIGNATURE
+		ChunkAnimator-1.18-1.3.3.jar                      |Chunk Animator                |chunkanimator                 |1.18-1.3.3          |DONE      |Manifest: NOSIGNATURE
+		supermartijn642corelib-1.0.16b-mc1.18.jar         |SuperMartijn642's Core Lib    |supermartijn642corelib        |1.0.16b             |DONE      |Manifest: NOSIGNATURE
+		dungeons_enhanced-1.18.1-3.0-b4.jar               |Dungeons Enhanced             |dungeons_enhanced             |3.0                 |DONE      |Manifest: NOSIGNATURE
+		spark-1.8.6-forge.jar                             |spark                         |spark                         |1.8.6               |DONE      |Manifest: NOSIGNATURE
+		curios-forge-1.18.1-5.0.6.1.jar                   |Curios API                    |curios                        |1.18.1-5.0.6.1      |DONE      |Manifest: NOSIGNATURE
+		relics-0.3.4.1.jar                                |Relics                        |relics                        |0.3.4.1             |DONE      |Manifest: NOSIGNATURE
+		Patchouli-1.18.1-65.jar                           |Patchouli                     |patchouli                     |1.18.1-65           |DONE      |Manifest: NOSIGNATURE
+		corail_woodcutter-1.18-2.2.1.jar                  |Corail Woodcutter             |corail_woodcutter             |2.2.1               |DONE      |Manifest: NOSIGNATURE
+		betterbiomeblend-1.18.1-1.3.2-forge.jar           |Better Biome Blend            |betterbiomeblend              |1.3.2-forge         |DONE      |Manifest: NOSIGNATURE
+		IntegratedTunnels-1.18.1-1.8.11.jar               |IntegratedTunnels             |integratedtunnels             |1.8.11              |DONE      |Manifest: NOSIGNATURE
+		Gobber2-Forge-1.18.1-2.6.18.jar                   |Gobber 2                      |gobber2                       |2.6.18              |DONE      |Manifest: NOSIGNATURE
+		EnigmaticLegacy-2.17.0.jar                        |Enigmatic Legacy              |enigmaticlegacy               |2.17.0              |DONE      |Manifest: NOSIGNATURE
+		architectury-3.7.22.jar                           |Architectury                  |architectury                  |3.7.22              |DONE      |Manifest: NOSIGNATURE
+		curiouselytra-forge-1.18.1-5.0.1.0.jar            |Curious Elytra                |curiouselytra                 |1.18.1-5.0.1.0      |DONE      |Manifest: NOSIGNATURE
+		AI-Improvements-1.18-0.4.0.jar                    |AI-Improvements               |aiimprovements                |0.4.0               |DONE      |Manifest: NOSIGNATURE
+		productivebees-1.18.1-0.8.0.7.jar                 |Productive Bees               |productivebees                |1.18.1-0.8.0.7      |DONE      |Manifest: NOSIGNATURE
+		light-overlay-6.0.4-forge.jar                     |Light Overlay                 |lightoverlay                  |6.0.4               |DONE      |Manifest: NOSIGNATURE
+		trashcans-1.0.12-mc1.18.jar                       |Trash Cans                    |trashcans                     |1.0.12              |DONE      |Manifest: NOSIGNATURE
+		the_bumblezone_forge-4.3.6+1.18.1.jar             |The Bumblezone                |the_bumblezone                |4.3.6+1.18.1        |DONE      |Manifest: NOSIGNATURE
+		bwncr-forge-1.18.1-3.10.18.jar                    |Bad Wither No Cookie Reloaded |bwncr                         |3.10.18             |DONE      |Manifest: NOSIGNATURE
+		observable-1.2.3-forge.jar                        |Observable                    |observable                    |1.2.3               |DONE      |Manifest: NOSIGNATURE
+		FastLeafDecay-27.2.jar                            |FastLeafDecay                 |fastleafdecay                 |27.2                |DONE      |Manifest: NOSIGNATURE
+		clienttweaks-forge-1.18-7.0.1.jar                 |Client Tweaks                 |clienttweaks                  |7.0.1               |DONE      |Manifest: NOSIGNATURE
+		rhino-forge-1801.1.8-build.102.jar                |Rhino                         |rhino                         |1801.1.8-build.102  |DONE      |Manifest: NOSIGNATURE
+		biggerreactors-1.18.1-0.6.0-beta.0.3.jar          |Bigger Reactors               |biggerreactors                |0.6.0-beta.0.3      |DONE      |Manifest: NOSIGNATURE
+		ftb-library-forge-1801.3.5-build.109.jar          |FTB Library                   |ftblibrary                    |1801.3.5-build.109  |DONE      |Manifest: NOSIGNATURE
+		ftb-teams-forge-1801.2.5-build.48.jar             |FTB Teams                     |ftbteams                      |1801.2.5-build.48   |DONE      |Manifest: NOSIGNATURE
+		additionallanterns-1.0.0-mc1.18.jar               |Additional Lanterns           |additionallanterns            |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		item-filters-forge-1801.2.6-build.16.jar          |Item Filters                  |itemfilters                   |1801.2.6-build.16   |DONE      |Manifest: NOSIGNATURE
+		jei-1.18.1-9.2.1.69.jar                           |Just Enough Items             |jei                           |9.2.1.69            |DONE      |Manifest: NOSIGNATURE
+		TesseractAPI-1.18.1-0.1.jar                       |TesseractAPI                  |tesseract                     |1.18.1-0.1          |DONE      |Manifest: NOSIGNATURE
+		scannable-1.18.1-forge-1.7.6+da03abb.jar          |Scannable                     |scannable                     |1.7.6               |DONE      |Manifest: NOSIGNATURE
+		LibraryFerret-Forge-1.18.1-1.0.3.jar              |Library ferret                |libraryferret                 |1.0.3               |DONE      |Manifest: NOSIGNATURE
+		caelus-forge-1.18.1-3.0.0.2.jar                   |Caelus API                    |caelus                        |1.18.1-3.0.0.2      |DONE      |Manifest: NOSIGNATURE
+		waystones-forge-1.18.1-9.0.4.jar                  |Waystones                     |waystones                     |9.0.4               |DONE      |Manifest: NOSIGNATURE
+		Clumps-forge-1.18.1-8.0.0+5.jar                   |Clumps                        |clumps                        |8.0.0+5             |DONE      |Manifest: NOSIGNATURE
+		shutupexperimentalsettings-1.0.4-1.18+.jar        |Shutup Experimental Settings! |shutupexperimentalsettings    |1.0.4               |DONE      |Manifest: NOSIGNATURE
+		awesomedungeon-2.0.5.jar                          |Awesome Dungeon               |awesomedungeon                |2.0.5               |DONE      |Manifest: NOSIGNATURE
+		comforts-forge-1.18.1-5.0.0.2.jar                 |Comforts                      |comforts                      |1.18.1-5.0.0.2      |DONE      |Manifest: NOSIGNATURE
+		configured-1.5.3-1.18.1.jar                       |Configured                    |configured                    |1.5.3               |DONE      |Manifest: NOSIGNATURE
+		MyServerIsCompatible-1.18-1.0.jar                 |MyServerIsCompatible          |myserveriscompatible          |1.0                 |DONE      |Manifest: NOSIGNATURE
+		phosphophyllite-1.18.1-0.6.0-beta.0.2.jar         |Phosphophyllite               |phosphophyllite               |0.6.0-beta.0.2      |DONE      |Manifest: NOSIGNATURE
+		curioofundying-forge-1.18-5.3.0.0.jar             |Curio of Undying              |curioofundying                |1.18-5.3.0.0        |DONE      |Manifest: NOSIGNATURE
+		lazydfu-1.0-1.18+.jar                             |LazyDFU                       |lazydfu                       |0.1.3               |DONE      |Manifest: NOSIGNATURE
+		farsight-1.18-1.6.jar                             |Farsight mod                  |farsight_view                 |1.18-1.6            |DONE      |Manifest: NOSIGNATURE
+		ToastControl-1.18.1-6.0.1.jar                     |Toast Control                 |toastcontrol                  |6.0.1               |DONE      |Manifest: NOSIGNATURE
+		blueprint-1.18.1-5.1.1.jar                        |Blueprint                     |blueprint                     |5.1.1               |DONE      |Manifest: NOSIGNATURE
+		Compat-O-Plenty-1.18.1-1.4.1.jar                  |Compat O' Plenty              |compatoplenty                 |1.18.1-1.4.1        |DONE      |Manifest: NOSIGNATURE
+		CraftTweaker-forge-1.18.1-9.0.63.jar              |CraftTweaker                  |crafttweaker                  |9.0.63              |DONE      |Manifest: NOSIGNATURE
+		ftb-chunks-forge-1801.3.4-build.127.jar           |FTB Chunks                    |ftbchunks                     |1801.3.4-build.127  |DONE      |Manifest: NOSIGNATURE
+		kubejs-forge-1801.4.2-build.300.jar               |KubeJS                        |kubejs                        |1801.4.2-build.300  |DONE      |Manifest: NOSIGNATURE
+		forge-1.18.1-39.0.85-universal.jar                |Forge                         |forge                         |39.0.85             |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		IntegratedCrafting-1.18.1-1.0.21.jar              |IntegratedCrafting            |integratedcrafting            |1.0.21              |DONE      |Manifest: NOSIGNATURE
+		client-1.18.1-20211210.034407-srg.jar             |Minecraft                     |minecraft                     |1.18.1              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		AntimatterAPI-1.18.1-0.1.jar                      |AntimatterAPI                 |antimatter                    |1.18.1-0.1          |DONE      |Manifest: NOSIGNATURE
+		GregTech-Intergalactical-1.18.1-0.1.jar           |GregTech Intergalactical      |gregtech                      |1.18.1-0.1          |DONE      |Manifest: NOSIGNATURE
+		TConstruct-1.18.1-3.4.1.46.jar                    |Tinkers' Construct            |tconstruct                    |3.4.1.46            |DONE      |Manifest: NOSIGNATURE
+		theoneprobe-1.18-5.0.3.jar                        |The One Probe                 |theoneprobe                   |1.18-5.0.3          |DONE      |Manifest: NOSIGNATURE
+		appliedenergistics2-10.0.1.jar                    |Applied Energistics 2         |ae2                           |10.0.1              |DONE      |Manifest: NOSIGNATURE
+		AEInfinityBooster-1.18.1-1.0.0+3.jar              |AEInfinityBooster             |aeinfinitybooster             |1.18.1-1.0.0+3      |DONE      |Manifest: NOSIGNATURE
+		TerraBlender-forge-1.18.1-1.1.0.73.jar            |TerraBlender                  |terrablender                  |1.18.1-1.1.0.73     |DONE      |Manifest: NOSIGNATURE
+		swingthroughgrass-1.18.1-1.8.0.jar                |SwingThroughGrass             |swingthroughgrass             |1.18.1-1.8.0        |DONE      |Manifest: NOSIGNATURE
+		MouseTweaks-forge-mc1.18-2.21.jar                 |Mouse Tweaks                  |mousetweaks                   |2.21                |DONE      |Manifest: NOSIGNATURE
+		ftb-quests-forge-1801.3.7-build.93.jar            |FTB Quests                    |ftbquests                     |1801.3.7-build.93   |DONE      |Manifest: NOSIGNATURE
+		ImmersiveEngineering-1.18.1-7.1.0-145.jar         |Immersive Engineering         |immersiveengineering          |1.18.1-7.1.0-145    |DONE      |Manifest: 44:39:94:cf:1d:8c:be:3c:7f:a9:ee:f4:1e:63:a5:ac:61:f9:c2:87:d5:5b:d9:d6:8c:b5:3e:96:5d:8e:3f:b7
+		AdLods-1.18.1-5.0.0.1-build.0061.jar              |Large Ore Deposits            |adlods                        |05.0.0.1            |DONE      |Manifest: NOSIGNATURE
+		pipez-1.18.1-1.0.1.jar                            |Pipez                         |pipez                         |1.18.1-1.0.1        |DONE      |Manifest: NOSIGNATURE
+		Iceberg-1.18.1-1.0.40.jar                         |Iceberg                       |iceberg                       |1.0.40              |DONE      |Manifest: NOSIGNATURE
+		Mantle-1.18.1-1.8.31.jar                          |Mantle                        |mantle                        |1.8.31              |DONE      |Manifest: NOSIGNATURE
+		LegendaryTooltips-1.18.1-1.2.4.jar                |Legendary Tooltips            |legendarytooltips             |1.2.4               |DONE      |Manifest: NOSIGNATURE
+		IntegratedDynamics-1.18.1-1.10.10.jar             |IntegratedDynamics            |integrateddynamics            |1.10.10             |DONE      |Manifest: NOSIGNATURE
+		Croptopia-1.18-FORGE-1.8.1.jar                    |Croptopia                     |croptopia                     |1.8.1               |DONE      |Manifest: NOSIGNATURE
+		FastWorkbench-1.18.1-6.0.1.jar                    |Fast Workbench                |fastbench                     |6.0.1               |DONE      |Manifest: NOSIGNATURE
+		Beyond-Earth-Giselle-Addon-1.18.1-1.9.jar         |Beyond Earth: Giselle Addon   |beyond_earth_giselle_addon    |1.9                 |DONE      |Manifest: NOSIGNATURE
+		AutoRegLib-1.7-53.jar                             |AutoRegLib                    |autoreglib                    |1.7-53              |DONE      |Manifest: NOSIGNATURE
+		AkashicTome-1.5-17.jar                            |Akashic Tome                  |akashictome                   |1.5-17              |DONE      |Manifest: NOSIGNATURE
+		Quark-3.1-339.jar                                 |Quark                         |quark                         |3.1-339             |DONE      |Manifest: NOSIGNATURE
+		Regrowth-1.18.1-1.39.0.26.jar                     |Regrowth Mod                  |regrowth                      |1.18.1-1.39.0.26    |DONE      |Manifest: NOSIGNATURE
+		quartz-1.18.1-0.0.0-beta.0.1.jar                  |Quartz                        |quartz                        |0.0.0-beta.0.1      |DONE      |Manifest: NOSIGNATURE
+		FastFurnace-1.18.1-6.0.2.jar                      |FastFurnace                   |fastfurnace                   |6.0.2               |DONE      |Manifest: NOSIGNATURE
+		World Stripper-1.18-2.1.1.jar                     |World Stripper                |worldstripper                 |2.1.1               |DONE      |Manifest: NOSIGNATURE
+		appleskin-forge-mc1.18-2.3.0.jar                  |AppleSkin                     |appleskin                     |2.3.0+mc1.18        |DONE      |Manifest: NOSIGNATURE
+		lootr-1.18-0.1.14.48.jar                          |Lootr                         |lootr                         |0.1.14.48           |DONE      |Manifest: NOSIGNATURE
+		SoL-Carrot-1.18.1-1.12.0.jar                      |Spice of Life: Carrot Edition |solcarrot                     |1.18.1-1.12.0       |DONE      |Manifest: NOSIGNATURE
+		moredragoneggs-3.1.jar                            |More Dragon Eggs              |moredragoneggs                |3.1                 |DONE      |Manifest: NOSIGNATURE
+		Lychee-1.18.1-forge-1.5.0.jar                     |Lychee Tweaker                |lychee                        |1.5.0               |DONE      |Manifest: NOSIGNATURE
+		BetterF3-1.2.2-Forge-1.18.jar                     |BetterF3                      |betterf3                      |1.2.2               |DONE      |Manifest: NOSIGNATURE
+		Aquaculture-1.18.1-2.3.3.jar                      |Aquaculture 2                 |aquaculture                   |1.18.1-2.3.3        |DONE      |Manifest: NOSIGNATURE
+		kubejs-immersive-engineering-1801.2.0-build.31.jar|KubeJS Immersive Engineering  |kubejs_immersive_engineering  |1801.2.0-build.31   |DONE      |Manifest: NOSIGNATURE
+		extremeSoundMuffler-3.24_Forge-1.18.1.jar         |Extreme Sound Muffler         |extremesoundmuffler           |3.24_forge-1.18.1   |DONE      |Manifest: NOSIGNATURE
+		Morph-o-Tool-1.5-30.jar                           |Morph-o-Tool                  |morphtool                     |1.5-30              |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 373bc61e-18e2-407e-b083-6b67048a854c
+	FML: 39.0
+	Forge: net.minecraftforge:39.0.85
